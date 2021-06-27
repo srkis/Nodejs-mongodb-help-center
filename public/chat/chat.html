@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChattyFly</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="http://localhost:3000/chat/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="http://knjizara.icodes.rocks/chatbot/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="http://localhost:3000/chat/main.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="body" class="fabs">
+    <div class="chat">
+        <!--chat header -->
+        <div class="chat_header">
+            <div class="chat_option">
+                <div class="header_img" style="margin-left: 25px;">
+                    <img src="http://knjizara.icodes.rocks/chatbot/logo1.png"/>
+                    <span>ChattyFly</span>
+
+                </div>
+
+
+                <span id="chat_head"> </span>
+
+                <h4 id="chat_head-text">We make it simple and powerfull for businesses and people. We're glad to help. Ask us anything</h4>
+                <span id="chat_fullscreen_loader" class="chat_fullscreen_loader"><i class="fullscreen zmdi zmdi-window-maximize"></i></span>
+            </div>
+        </div>
+        <!--chat header END -->
+
+        <!--chat First header -->
+        <div class="chat_header1" style="height:256px !important;">
+
+            <div class="chat_option">
+                <div class="header_img" style="margin-left: 25px;">
+
+                    <div class="arrows-div">
+                        <span style="margin-top: 0px;font-size: 20px;"><a id="back0" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-left zmdi-hc-2x" style="color:#FFF !important;"></i>  </a></span>
+                        <span style="margin-top: 0px;font-size: 20px; margin-left: 10px;float:right"><a id="chat_second_screen" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-right zmdi-hc-2x" style="color:#FFF !important;"></i></a></span>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <p id="chat_head-text" >We help your business grow by connecting you to your customers.</p>
+                </div>
+                <div class="head-img-item">
+                    <img class="head-img" src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg">
+                    <span class="caption">Elizabeth</span>
+                </div>
+                <div class="head-img-item">
+                    <img class="head-img" src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg">
+                    <span class="caption">Lisa</span>
+                </div>
+                <div class="head-img-item">
+                    <img class="head-img" src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg">
+                    <span class="caption">Arthur</span>
+                </div>
+                <p id="txt-under-img">The team typically replies in a few hours.</p>
+            </div>
+
+        </div>
+        <!--chat First header END -->
+
+        <!--chat Second header -->
+        <div class="chat_header2">
+            <div class="chat_option">
+                <div class="header_img" style="margin-left: 25px;">
+
+                    <div class="arrows-div">
+                        <span style="margin-top: 0px;font-size: 20px;"><a id="back1" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-left zmdi-hc-2x" style="color:#FFF !important;"></i>  </a></span>
+                        <span style="margin-top: 0px;font-size: 20px; margin-left: 10px;float:right"><a id="chat_third_screen" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-right zmdi-hc-2x" style="color:#FFF !important;"></i> </a></span>
+                        <div class="clear"></div>
+                    </div>
+
+                    <p id="chat_head-text" >We help your business grow by connecting you to your customers.</p>
+                </div>
+
+
+                <p id="txt-under-img">The team typically replies in a few hours.</p>
+            </div>
+
+        </div>
+        <!--chat Second header END -->
+
+        <!--chat third header -->
+        <div class="chat_header3">
+            <div class="chat_option">
+                <div class="header_img" style="margin-left: 25px;">
+
+
+                    <div class="arrows-div">
+                        <span style="margin-top: 0px;font-size: 20px;"><a id="back2" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-left zmdi-hc-2x" style="color:#FFF !important;"></i>  </a></span>
+                        <span style="margin-top: 0px;font-size: 20px; margin-left: 10px;float:right"><a id="chat_fourth_screen" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-chevron-right zmdi-hc-2x" style="color:#FFF !important;"></i>  </a></span>
+                        <div class="clear"></div>
+                    </div>
+
+                    <p id="chat_head-text" >We help your business grow by connecting you to your customers.</p>
+                </div>
+                <p id="txt-under-img">The team typically replies in a few hours.</p>
+            </div>
+
+        </div>
+        <!--chat third header END -->
+
+        <!--chat fourth header -->
+        <div class="chat_header4">
+            <div class="chat_option">
+                <div class="header_img" style="margin-left: 25px;">
+
+                    <div class="arrows-div">
+                        <span style="margin: 10px 0 10px 0px;font-size: 20px;"><a id="back3" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-long-arrow-return  zmdi-hc-lg" style="margin: 10px 0 10px 0px; color:#FFF !important;"></i>  </a></span>
+                        <div class="clear"></div>
+                    </div>
+
+                    <p id="chat_head-text" >We help your business grow by connecting you to your customers.</p>
+                </div>
+                <p id="txt-under-img">The team typically replies in a few hours.</p>
+            </div>
+        </div>
+        <!--chat fourth header END -->
+
+        <!--Search page header-->
+        <div class="search_page_header">
+
+            <span style="margin-top:5px;" class="search-page-title">Help Center</span>
+            <span style="margin-top: 0px;font-size: 20px; margin-right: 20px;float:right"><a id="close_search_page" class="button-back" href="#" class="btn btn-success btn-md"><i class="zmdi zmdi-close zmdi-hc-2x" style="color:#FFF !important;"></i></a></span>
+
+        </div>
+
+        <div class="chat_body chat_login">
+
+            <a id="chat_first_screen" class="btn-forward">
+          <span class="desktop-only">
+            Start conversation
+          <i class="zmdi zmdi-arrow-right"></i>
+          </span>
+            </a>
+
+
+            <div onClick="window.open('http://localhost:4000/features','_blank');" class="container drop-shadow" style="width:335px !important; margin-top:10px; cursor: pointer;">
+                <p style="margin-top: 5px;">   <i style="color:#888; " class="fa fa-tasks"></i> &nbsp; Check out new <b>Amazing Features</b> </p>
+
+                <div class="container" style="width:260px !important">
+                   <span>That helps your business grow!</span>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+
+
+            <div id="chat_conversation"> </div><!--U chat.js fajlu se apenduje div ako ima history-->
+
+            <div class="container drop-shadow" style="width:335px !important">
+                <div class="search" style="width:250px !important; height:100px;" >
+                    <div class="search-container">
+                        <div class="row">
+                            <div class="search-text" style="padding-top: 10px;">Find an answer yourself</div>
+                            <div id="custom-search-input">
+                                <div class="input-group ">
+
+                                    <input type="text" class="search-query form-control" name="search-msg" id="search-msg" placeholder="Search our help center" />
+                                    <span class="input-group-btn">
+                              <button class="btn btn-danger" type="button">
+                                   <i class="zmdi zmdi-search-for zmdi-hc-lg" style="color: #5430f6 !important"; ></i>
+                              </button>
+                          </span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+
+
+            <!--Search results-->
+
+            <div id="search_div" class="container drop-shadow" style="width:335px !important; margin-top:20px; display: none;">
+                <p style="margin-top: 5px;">Search results:</p>
+                <i class="icon-chevron-left"></i>
+                <div class="container" style="width:260px !important">
+
+                    <div class="row search_content" id="search_results"></div>
+
+                </div>
+                <p>&nbsp;</p>
+            </div>
+
+
+            <!--End search-->
+
+            <div class="container drop-shadow" style="width:335px !important; margin-top:20px;">
+                <p style="margin-top: 5px; ">   <i style="color:#888;font-size: 16px; " class="fa fa-bar-chart"></i> &nbsp;How do you rate <b>ChattyFly?</b> </p>
+
+                <div class="container" style="width:260px !important">
+                    <span class="chat_msg_item ">
+                        <ul class="tags" style="margin: 0 auto; width: 100% !important;">
+                          <li>Happy</li>
+                          <li>Sad</li>
+                          <li>Angry</li>
+                        </ul>
+                    </span>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+
+
+        </div>
+        <div id="chat_converse" class="chat_converse">
+            <!-- <a id="chat_second_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a> -->
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Hey there! Any question?</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Hello!</span>
+            <span class="status">20m ago</span>
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Hey! Would you like to talk sales, support, or anyone?</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            <span class="status2">Just now. Not seen yet</span>
+        </div>
+
+
+        <div id="chat_body" class="chat_body chat_cats">
+            <div class="chat_category">
+                <!--  <a id="chat_third_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>-->
+                <p>What would you like to talk about?</p>
+                <ul>
+                    <li>Tech</li>
+                    <li class="active">Sales</li>
+                    <li >Pricing</li>
+                    <li>other</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="chat_form" style="float: none !important; height: 433px !important;" class="chat_converse chat_form">
+            <!--  <a id="chat_fourth_screen" class="fab"><i class="zmdi zmdi-arrow-right"></i></a>-->
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Hey there! Any question?</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Hello!</span>
+            <span class="status">20m ago</span>
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Agent typically replies in a few hours. Don't miss their reply.
+              <div>
+                <br>
+                <form class="get-notified">
+                    <label for="chat_log_email">Get notified by email</label>
+                    <input id="chat_log_email" placeholder="Enter your email"/>
+                    <i class="zmdi zmdi-chevron-right"></i>
+                </form>
+              </div></span>
+
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Send message to agent.
+              <div>
+                <form class="message_form">
+                    <input placeholder="Your email"/>
+                    <input placeholder="Technical issue"/>
+                    <textarea rows="4" placeholder="Your message"></textarea>
+                    <button>Send</button>
+                </form>
+
+          </div></span>
+        </div>
+        <div id="chat_fullscreen" class="chat_conversion chat_converse" style="height:448px !important;">
+        <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Hey there! Any question?</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Hello!</span>
+            <div class="status">20m ago</div>
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+              </div>Hey! Would you like to talk sales, support, or anyone?</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+               </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+            <span class="chat_msg_item chat_msg_item_user">
+              Where can I get some?
+            </span>
+            <span class="chat_msg_item chat_msg_item_admin">
+              <div class="chat_avatar">
+                 <img src="http://res.cloudinary.com/dqvwa7vpe/image/upload/v1496415051/avatar_ma6vug.jpg"/>
+               </div>The standard chuck...
+             </span>
+            <span class="chat_msg_item chat_msg_item_user">
+              There are many variations of passages of Lorem Ipsum available
+            </span>
+            <div class="status2">Just now, Not seen yet</div>
+            <span class="chat_msg_item ">
+            <ul class="tags">
+              <li>Hats</li>
+              <li>T-Shirts</li>
+              <li>Pants</li>
+            </ul>
+        </span>
+        </div>
+
+
+        <!--Ovde se prikazuje page na search-u-->
+        <div style="display:none; background: #fff; padding:10px;" id="showPage"> </div>
+
+
+
+        <div class="footer">
+
+            <p style="margin: 10px 0 10px;">
+                <a href="#">Powered by ChattyFly</a>
+                <img src="http://knjizara.icodes.rocks/chatbot/logo1.png" alt="ChattyFly">
+
+            </p>
+        </div>
+
+        <div class="fab_field">
+
+            <div class="container">
+                <div class="col-xs-3">
+                    <div class="border-class">
+                        <a id="fab_camera" class="fab"><i class="zmdi zmdi-camera"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="border-class">
+                        <a style="font-size: 17px;" id="showEmoji" >🙂</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a id="fab_send" class="fab"><i class="zmdi zmdi-mail-send"></i></a>
+            <input type="text" class="form-control" name="chat_message" id="chatSend" placeholder="Send a message">
+            <!--  <textarea id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message form-control"></textarea> -->
+
+           </div>
+
+       </div>
+
+
+       <div id="chat-circle">
+           <a id="prime" class="fab"><i class="prime zmdi zmdi-comment-outline"></i></a>
+
+       </div>
+   </div>
+
+
+   </body>
+
+   <script>
+
+
+//
+
+
+   </script>

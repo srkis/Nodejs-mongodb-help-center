@@ -1,0 +1,207 @@
+<!--================Footer Area =================-->
+<footer class="footer_area">
+    <div class="container">
+        <div class="row footer_inner">
+            <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h3>About Me</h3>
+                    </div>
+                    <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
+                        improving your skills,</p>
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </aside>
+            </div>
+            <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget news_widget">
+                    <div class="f_title">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <p>Stay updated with our latest trends</p>
+                    <div id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                              method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
+                                       required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
+                            </div>
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-lg-2">
+                <aside class="f_widget social_widget">
+                    <div class="f_title">
+                        <h3>Follow Me</h3>
+                    </div>
+                    <p>Let us be social</p>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="chat"></div>
+<div id="storage"></div>
+<div id="displayed"></div>
+<!--================End Footer Area =================-->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stellar.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="vendors/isotope/isotope-min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="vendors/counter-up/jquery.counterup.min.js"></script>
+<script src="js/mail-script.js"></script>
+<!--gmaps Js-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+<script src="js/gmaps.min.js"></script>
+<script src="js/theme.js"></script>
+
+
+
+
+
+
+<script type="text/javascript">
+
+    /*
+  window.intercomSettings = {
+    app_id: 'APP_ID',
+    name: "Jane Doe", // Full name
+    email: "customer@example.com", // Email address
+    created_at: 1312182000 // Signup date as a Unix timestamp
+  };
+
+ */
+</script>
+
+<script>/*(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + window.intercomSettings.app_id;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();*/</script>
+
+
+<script>
+    window.ChattySettings = {
+        app_id: '2cd13022b821bb89a11a',
+        name: "Test 1 ", // Full name
+       //email: "srdjan@chemius.net", // Email address
+        email: "stojanovicsrdjan27@gmail.com", // Email address
+        created_at: 1422182000 // Signup date as a Unix timestamp
+    };
+
+    let loadScriptAsync = function(uri){
+        return new Promise((resolve, reject) => {
+            let tag = document.createElement('script');
+            tag.src = uri;
+            tag.async = true;
+            tag.onload = () => {
+                resolve();
+            };
+            let firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        });
+    }
+    let scriptLoaded = loadScriptAsync('http://localhost:4000/chat/chat-init.js');
+
+    scriptLoaded.then(function(){
+        window.Chatty.asyncLoadScripts();
+        window.Chatty.messenger('start');
+
+    });
+
+
+    /*
+
+            async function getHTML( url, callback) {
+
+                // Feature detection
+                if ( !window.XMLHttpRequest ) return;
+
+                // Create new request
+                let xhr = new XMLHttpRequest();
+
+                // Setup callback
+                xhr.onload = function() {
+                    if ( callback && typeof( callback ) === 'function' ) {
+                        callback( this.responseXML );
+                    }
+                }
+                xhr.open( 'GET', url );
+                xhr.responseType = 'document';
+                xhr.send();
+
+            };
+
+        (function(){
+
+            getHTML( 'http://localhost:3000/chat/chat.html', function (response) {
+                let someElem = document.querySelector( '#chat' );
+                let someOtherElem = response.querySelector( '#body');
+                someElem.innerHTML = someOtherElem.innerHTML;
+
+                let link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = 'http://localhost:3000/chat/style.css';
+                let head = (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(link);
+
+
+                let bsa = document.createElement('script');
+                bsa.type = 'text/javascript';
+                bsa.async = true;
+                bsa.src = 'http://localhost:3000/chat/main.js';
+                (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+
+            });
+
+
+
+
+
+            /*
+
+                    let fontBootstrap = document.createElement('link');
+                    fontBootstrap.type = 'text/css';
+                    fontBootstrap.rel = 'stylesheet';
+                    fontBootstrap.href = 'http://knjizara.icodes.rocks/chatbot/fontawesome/css/all.css';
+                    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fontBootstrap);
+            */
+
+
+
+/*
+        let fontMaterial = document.createElement('link');
+        fontMaterial.type = 'text/css';
+        fontMaterial.rel = 'stylesheet';
+        fontMaterial.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fontMaterial);
+*/
+
+
+
+
+  //  })();
+
+  </script>
+
+
+</body>
+
+</html>

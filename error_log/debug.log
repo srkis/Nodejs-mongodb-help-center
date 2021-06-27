@@ -1,0 +1,20 @@
+Error happened at:6/1/2019, 4:33:25 PM, with IP:127.0.0.1
+TypeError: Cannot read property 'cf_owner_id' of undefined
+    at groupMembersModel.find.then.findUsers (/var/www/html/chattyfly/classes/users.js:228:71)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Error happened at: 6/1/2019, 4:44:03 PM, with IP:127.0.0.1
+TypeError: Cannot read property 'cf_owner_id' of undefined
+    at groupMembersModel.find.then.findUsers (/var/www/html/chattyfly/classes/users.js:228:71)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Error happened at: 6/1/2019, 4:44:34 PM, with IP:127.0.0.1
+TypeError: Cannot read property 'cf_owner_id' of undefined
+    at groupMembersModel.find.then.findUsers (/var/www/html/chattyfly/classes/users.js:228:71)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+Error happened at: 6/1/2019, 5:15:10 PM, with IP:127.0.0.1
+TypeError: Cannot read property 'cf_owner_id' of undefined
+    at groupMembersModel.find.then.findUsers (/var/www/html/chattyfly/classes/users.js:228:71)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)

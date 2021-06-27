@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title><Messages</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<% if(typeof errorsArray != 'undefined') { %>
+
+    <% errorsArray.forEach(function (error) { %>
+        <div class="alertErrors">
+            <span class="closebtnErrors" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Warning!</strong> <%= error.msg %>.
+        </div>
+        <div>&nbsp;</div>
+
+   <% }); %>
+<% } %>
+
+
+<% if(error_msg != '') { %>
+
+    <div class="alertErrors">
+        <span class="closebtnErrors" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Warning!</strong> <%= error_msg %>.
+    </div>
+    <div>&nbsp;</div>
+
+<% } %>
+
+<% if(error != '') { %>
+
+    <div class="alertErrors">
+        <span class="closebtnErrors" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Warning!</strong> <%= error %>.
+    </div>
+    <div>&nbsp;</div>
+
+<% } %>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Toastr -->
+<script src="js/plugins/toastr/toastr.min.js"></script>
+
+
+<% if(success_add_page_msg != '') { %>
+
+    <script>
+        $(document).ready(function(){
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "progressBar": true,
+                "preventDuplicates": false,
+                "positionClass": "toast-bottom-right",
+                "onclick": null,
+                "showDuration": "400",
+                "hideDuration": "1000",
+                "timeOut": "7000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            toastr.success('<%= success_add_page_msg %>');
+
+        });
+
+        <% } %>
+    </script>
+
+    <% if(error_add_page_msg != '') { %>
+
+        <script>
+            $(document).ready(function(){
+                toastr.options = {
+                    "closeButton": true,
+                    "debug": false,
+                    "progressBar": true,
+                    "preventDuplicates": false,
+                    "positionClass": "toast-bottom-right",
+                    "onclick": null,
+                    "showDuration": "400",
+                    "hideDuration": "1000",
+                    "timeOut": "7000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+
+                toastr.error('<%= error_add_page_msg %>');
+
+            });
+        </script>
+
+
+        <!--
+        <div class="alertSuccess">
+            <span class="closebtnSuccess" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong></strong> .
+        </div>
+        <div>&nbsp;</div>
+
+    <-->
+<% } %>
+
+
+
+
+</body>
+</html>
+
+
+

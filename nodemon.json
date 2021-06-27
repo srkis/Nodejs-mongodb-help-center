@@ -1,0 +1,13 @@
+{
+  "verbose": true,
+  "ignore": [
+            "/var/www/html/chattyfly/public/users/js/plugins/",
+            "/var/www/html/chattyfly/public/users/img/",
+            "/var/www/html/chattyfly/public/users/font-awesome/",
+            "/var/www/html/chattyfly/public/vendors/",
+            "/var/www/html/chattyfly/public/users/css/plugins/",
+            "/var/www/html/chattyfly/public/users/js/demo/",
+            "/var/www/html/chattyfly/public/help/"
+            ]
+
+}

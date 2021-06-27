@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Help center</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ 
+<header>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+
+        <img  src="../img/logo-help.png" >
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item btn-group">
+            <a  href="/" class="nav-link"><i class="far fa-paper-plane"></i> Fly to ChattyFly
+            </a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input style="width: 350px;" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--/.Navbar-->
+</header>
+
+<main>
+  <!--Main layout-->
+  <div class="container">
+    <!--First row-->
+    <a class="row wow fadeIn" data-wow-delay="0.2s">
+      <% for (var i = 0; i < data.length; i++) { %>
+
+     <a href="/help/<%= data[i].cf_page_category_slug %>">
+      <div class="jumbotron text-center hoverable p-4" style="width: 80% !important;">
+        <!-- Grid row -->
+        <div class="row">
+              <div class="col-md-2 pb-3">
+              <!-- Excerpt -->
+                <span style="position: relative;top:30%; " class="h6 purple-text "><i class="fas fa-file-alt fa-3x "></i> </span>
+              </div>
+
+          <!-- Grid column -->
+          <div class="col-md-8 text-md-left">
+
+            <span style="font-size: 18px; font-weight: 400; " class="purple-text">  <%= data[i].cf_page_category_name %></span><br>
+            <p style="font-size: 15px; font-weight: 400; line-height: 1.4; color: #565867; margin-top: 15px; " > <%= data[i].cf_page_category_description %> </p>
+
+            <div class="avatar" style="width: 200px; ">
+              <img style="width:35px; height:35px; vertical-align: middle; float:left;" src="../img/ja.jpeg" class="rounded-circle z-depth-1 img-fluid">
+              <span style="font-size: 12px; margin-left: 8px;">2 Articles in this category</span>
+              <span style="font-size: 12px;margin-left: 8px;">Written by Srdjan, zika, pera</span>
+            </div>
+
+            <!--  <p class="font-weight-normal">  <img style="width:35px; height:35px; vertical-align: middle; float:left;" src="../img/ja.jpeg" class="rounded-circle z-depth-1 img-fluid">  <small>2 articles in this category</small></p> -->
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </a>
+
+      <% } %>
+      <!-- News jumbotron -->
+
+
+  </div>
+  <!--/.Main layout-->
+
+</main>
+
+<!--Footer-->
+<footer class="page-footer text-center text-md-left mt-4 pt-4">
+  <!--Footer links-->
+  <div class="container-fluid">
+    <div class="row">
+      <!--First column-->
+      <div class="col-lg-3 col-md-6 ml-auto">
+        <h5 class="title mb-3"><strong>About material design</strong></h5>
+        <p>Material Design (codenamed Quantum Paper) is a design language developed by Google.</p>
+        <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS,
+          and JS framework - Bootstrap.</p>
+      </div>
+      <!--/.First column-->
+      <hr class="w-100 clearfix d-sm-none">
+      <!--Second column-->
+      <div class="col-lg-2 col-md-6 ml-auto mb-4">
+        <h5 class="title mb-3"><strong>First column</strong></h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Second column-->
+      <hr class="w-100 clearfix d-sm-none">
+      <!--Third column-->
+      <div class="col-lg-2 col-md-6 ml-auto mb-4">
+        <h5 class="title mb-3"><strong>Second column</strong></h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Third column-->
+      <hr class="w-100 clearfix d-sm-none">
+      <!--Fourth column-->
+      <div class="col-lg-2 col-md-6 ml-auto mb-4">
+        <h5 class="title mb-3"><strong>Third column</strong></h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer links-->
+  <hr>
+  <!--Call to action-->
+  <div class="call-to-action text-center my-4">
+    <h4 class="mb-4">Material Design for Bootstrap</h4>
+    <h5 class="mb-4">Get our UI KIT for free</h5>
+    <ul class="list-unstyled list-inline">
+      <li class="list-inline-item">
+        <a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-primary waves-effect waves-light"
+          rel="nofollow">Sign up!</a>
+      </li>
+      <li class="list-inline-item">
+        <a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-info waves-effect waves-light"
+          rel="nofollow">Learn more</a>
+      </li>
+    </ul>
+  </div>
+  <!--/.Call to action-->
+
+  <!--Copyright-->
+  <div class="footer-copyright py-3 text-center">
+    <div class="containter-fluid">
+      © 2019 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+    </div>
+  </div>
+  <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
+
